@@ -17,7 +17,7 @@ public class canvas extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-
+        Greenfoot.setSpeed(200);
         addObject(cursor, 300, 200);
 
         palette red = new red();
@@ -29,6 +29,18 @@ public class canvas extends World
         
         palette black = new black();
         addObject(black, 162, 24);
+        prepare();
+        
+        palette green = new green();
+        addObject(green, 226, 24);
+        prepare();
+        
+        palette eraser = new eraser();
+        addObject(eraser, 504, 24);
+        prepare();
+        
+        palette clear = new clear();
+        addObject(clear, 566, 24);
         prepare();
     }
     
